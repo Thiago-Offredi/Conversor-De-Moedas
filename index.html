@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Conversor De Moedas</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <!-- representar o cabeçalho da página no HTML-->
+            <h1>
+                <!-- Título do cabeçalho-->
+                CURRENCY CONVERTER
+            </h1>
+        </header>
+
+        <main>
+            <!--especifica o conteúdo principal-->
+            <label>
+                <br>
+                <!--representa uma legenda para um item-->
+                Converter <b>de:</b>
+                <select>
+                    <!--um controle que apresenta um menu de opções-->
+
+                    <!--é usado para criar um controle que representa um item dentro de um elemento HTML5-->
+                    <option> R$ Real Brasileiro </option>
+
+                </select>
+            </label>
+
+
+            <label>
+                Converter <b>Para:</b>
+                <select id="currency-select">
+                    <option>US$ Dollar Americano</option>
+                    <option>€ Euro </option>
+                    <option>₿ Bitcoin</option>
+                </select>
+            </label>
+
+            <label>
+
+                Valor: <input id="input-real" placeholder="R$10.000,00">
+
+            </label>
+
+            <button id="botao" type="button">Converter</button>
+            <section>
+                <div class="container-currency">
+                    <img src="assets/brasil 2.png" alt="Bandeira-Brasil">
+                    <p class="currency-name">Real</p>
+                    <p class="values" id="real -value">R$ 10.000,00</p>
+                </div>
+                <img src="assets/Vector.png" alt="Seta" class="seta1">
+                <div class="container-currency">
+                    <img src="assets/estados-unidos (1) 1.png" alt="Bandeira Estados unidos" id="eua-img">
+                    <p class="currency-name" id="eua">Dollar Americano</p>
+                    <p class="values" id="dollar-real">US$ 2.000,00</p>
+                </div>
+            </section>
+        </main>
+    </div>
+
+</body>
+<script src="script.js"></script>
+
+</html>
